@@ -14,13 +14,13 @@ while True:
     maths = raw_input("Please enter your problem: ")
     maths = maths.split()
     if maths[0] == "+":
-        print add(float(maths[1]), float(maths[2]))
+        print reduce(add, map(int,maths[1:]))
     if maths[0] == "-":
-        print subtract(float(maths[1]), float(maths[2]))
+        print reduce(subtract, map(float,maths[1:]))
     if maths[0] == "*":
-        print multiply(float(maths[1]), float(maths[2]))
+        print reduce(multiply, map(float,maths[1:]))
     if maths[0] == "/":
-        print divide(float(maths[1]), float(maths[2]))
+        print reduce(divide, map(float,maths[1:]))
     if maths[0] == "square":
         print square(float(maths[1]))
     if maths[0] == "cube":
