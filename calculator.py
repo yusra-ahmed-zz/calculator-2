@@ -21,5 +21,8 @@ while True:
         print multiply(float(maths[1]), float(maths[2]))
     if maths[0] == "/":
         print divide(float(maths[1]), float(maths[2]))
-    if maths[0] == "**":
+    if maths[0] == "square":
         print square(float(maths[1]))
+    if maths[0] == "cube":
+        print cube(float(maths[1]))
+    
